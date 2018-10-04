@@ -5,7 +5,7 @@ public class Classroom {
 
     public Classroom(Person[] students, Person teacher)
     {
-        super("Classroom");
+        super();
         this.students = students;
         this.teacher = teacher;
     }
