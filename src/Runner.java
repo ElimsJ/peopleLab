@@ -3,5 +3,6 @@ public class Runner {
     {
         Person teacher = new Teacher("Science", "Mr","Shuyi","Jiang");
     }
+    System.out.println(String teacher)
 
 }
