@@ -1,9 +1,9 @@
-public class Classroom {
+public class Classroom{
 
     Student[] student;
     Teacher teacher;
 
-    public Classroom(Student [] student, Teacher teacher)
+    public Classroom(Student[] student, Teacher teacher)
     {
         this.student = student;
         this.teacher = teacher;
@@ -32,11 +32,18 @@ public class Classroom {
 
     public double classAverage()
     {
-
+        double sum = 0;
+        double gpanum = 0;
+        for(int i = 0; i < student.length -1; i++)
+        {
+            gpanum = student.getGPA();
+            sum += gpanum;
+        }
+        return (sum/(student.length -1));
     }
 
     public String printClass()
     {
-
+        return (teacher + ", " + getSubject() + ", " + student);
     }
 }
