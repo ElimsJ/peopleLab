@@ -14,6 +14,30 @@ public class Student extends Person {
         return GPA;
     }
 
+    public void setGPA(double GPA) {
+        this.GPA = GPA;
+    }
+
+    @Override
+    public String getFamilyName() {
+        return familyName;
+    }
+
+    @Override
+    public void setFamilyName(String familyName) {
+        this.familyName = familyName;
+    }
+
+    @Override
+    public String getFirstName() {
+        return firstName;
+    }
+
+    @Override
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
     public String toString() {
         return familyName + " , " + firstName;
     }
