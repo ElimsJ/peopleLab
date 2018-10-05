@@ -36,14 +36,19 @@ public class Classroom{
         double gpanum = 0;
         for(int i = 0; i < student.length -1; i++)
         {
-            gpanum = student.getGPA();
+            gpanum = student[i].getGPA();
             sum += gpanum;
         }
         return (sum/(student.length -1));
     }
 
-    public String printClass()
+    public void printClass()
     {
-        return (teacher + ", " + getSubject() + ", " + student);
+        System.out.println(teacher);
+        System.out.println(teacher.getSubject());
+        for(Student s : student)
+        {
+            System.out.println(s);
+        }
     }
 }
