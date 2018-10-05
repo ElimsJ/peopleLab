@@ -11,6 +11,8 @@ public class Student extends Person {
     }
 
     public double getGPA() {
+        double x = Math.ceil(4);
+        GPA = x;
         return GPA;
     }
 
