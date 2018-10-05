@@ -3,7 +3,7 @@ public class Student extends Person {
     private String familyName;
     private String firstName;
 
-    public Student(String firstName, String familyName, double GPA) {
+    public Student(String firstName, String familyName) {
         super(firstName, familyName);
         this.GPA = GPA;
         this.familyName = familyName;
