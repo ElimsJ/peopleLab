@@ -1,18 +1,33 @@
 public class Classroom {
 
-    Person[] students;
-    Person teacher;
+    Student[] student;
+    Teacher teacher;
 
-    public Classroom(Person[] students, Person teacher)
+    public Classroom(Student [] student, Teacher teacher)
     {
-        super();
-        this.students = students;
+        this.student = student;
         this.teacher = teacher;
+    }
+
+    public void setStudent(Student[] student) {
+        this.student = student;
+    }
+
+    public void setTeacher(Teacher teacher) {
+        this.teacher = teacher;
+    }
+
+    public Student[] getStudent() {
+        return student;
+    }
+
+    public Teacher getTeacher() {
+        return teacher;
     }
 
     public String getSubject()
     {
-
+        return this.teacher.getSubject();
     }
 
     public double classAverage()
