@@ -13,6 +13,7 @@ public class Runner {
             student[i] = randomStudent();
         }
         Classroom theClass = new Classroom(student,teach);
+        double average = Classroom.classAverage();
         theClass.printClass();
     }
 
@@ -25,4 +26,6 @@ public class Runner {
 
         return stu;
     }
+
+
 }
