@@ -5,7 +5,7 @@ public class Student extends Person {
 
     public Student(String firstName, String familyName) {
         super(firstName, familyName);
-        this.GPA = GPA;
+        this.GPA = Math.random() * 4;
         this.familyName = familyName;
         this.firstName = firstName;
     }
@@ -41,6 +41,6 @@ public class Student extends Person {
     }
 
     public String toString() {
-        return familyName + " , " + firstName;
+        return familyName + " , " + firstName + " , " + GPA;
     }
 }

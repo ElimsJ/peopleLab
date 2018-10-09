@@ -25,14 +25,4 @@ public class Runner {
 
         return stu;
     }
-
-    public double classAverage()
-    {
-        double avg = 0;
-        for(int i = 0; i <= 12; i++)
-        {
-            avg += Math.random()*4;
-        }
-        return avg;
-    }
 }
