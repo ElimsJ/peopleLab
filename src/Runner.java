@@ -3,19 +3,36 @@ import java.util.Random;
 public class Runner {
     static String[] firstName = {"Shuyi", "Kent", "Brian", "Wei", "Calvin", "Travis", "Vincent", "Jonathan", "Nathan", "Sheba", "Jack", "Dylan",};
     static String[] familyName = {"Gentleman", "Smith", "Li", "Lu", "Zheng", "Lin", "Rain", "Thunder", "Chair", "Table", "Matassa", "Leaf"};
-    public static Student randomStudent(Student Student[])
-    {
-        int rnd = new Random().nextInt(Student.length);
-        return Student[rnd];
-    }
+
     public static void main(String [] args)
     {
-        Teacher teach = new Teacher("JAVA", "Mr ", "Sushi", "River");
+        Teacher teach = new Teacher("JAVA", "Mr ", "Nathan", "Levin");
         Student[] student = new Student[12];
         for(int i = 0; i < 12; i++)
         {
             student[i] = randomStudent();
         }
         Classroom theClass = new Classroom(student,teach);
+        theClass.printClass();
+    }
+
+    public static Student randomStudent()
+    {
+        int rnd = new Random().nextInt(firstName.length);
+        int rnd2 = new Random().nextInt(familyName.length);
+
+        Student stu = new Student(firstName[rnd], familyName[rnd2]);
+
+        return stu;
+    }
+
+    public double classAverage()
+    {
+        double avg = 0;
+        for(int i = 0; i <= 12; i++)
+        {
+            avg += Math.random()*4;
+        }
+        return avg;
     }
 }
