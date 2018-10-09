@@ -33,13 +33,14 @@ public class Classroom{
     public double classAverage()
     {
         double sum = 0;
-        double gpanum = 0;
+        double gpanum;
         for(int i = 0; i < student.length -1; i++)
         {
             gpanum = student[i].getGPA();
             sum += gpanum;
         }
-        return (sum/(student.length -1));
+        sum = sum/student.length-1;
+        return sum;
     }
 
     public void printClass()

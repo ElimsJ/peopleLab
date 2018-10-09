@@ -13,8 +13,8 @@ public class Runner {
             student[i] = randomStudent();
         }
         Classroom theClass = new Classroom(student,teach);
-        double average = Classroom.classAverage();
         theClass.printClass();
+        System.out.println("The Class Average Is: " + theClass.classAverage());
     }
 
     public static Student randomStudent()
